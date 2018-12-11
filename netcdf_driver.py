@@ -5,12 +5,10 @@ Created on Tue Jul 31 11:33:20 2018
 @author: CS08
 """
 
-
 import time
 import sys 
 sys.path.append(r"C:\Users\cs08\OneDrive -CEFAS\python_scripts\clean examples")
 import netcdf_functions as nc
-
 
 
 input_data =r"W:\Environmental variables\Salinity_Copernicus.eu\Seasurface\\"+\
@@ -59,8 +57,5 @@ end= time.time()
 finish = end- start
 
 #estimated 2 minutes to convert netcdf with 1508 days of data to geotiffs
-
-
-
 
 
