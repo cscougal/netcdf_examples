@@ -118,39 +118,3 @@ def netcdf2GTIFF(data,my_variable,rows,cols,outpath,name_prefix,my_date,step,
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
