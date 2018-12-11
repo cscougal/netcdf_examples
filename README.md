@@ -1,2 +1,2 @@
 # netcdf_examples
-Converting netcdf to geotiff uisng numpy and gdal bindings
+Converting netcdf to geotiff using numpy and gdal bindings
