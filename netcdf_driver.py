@@ -27,16 +27,21 @@ cdf_data = nc.netCDFData(input_data,"lat","lon","time")
 #returns data , coordiantes, pixel info etc.
  
 data, lats, lons, dtime = cdf_data[0], cdf_data[1], cdf_data[2], cdf_data[3]
+
 originX ,originY = cdf_data[4], cdf_data[5]
 pixelX ,pixelY =  cdf_data[6],cdf_data[7]
+
 meta = cdf_data[8]
 
 cols = lons.shape[0]
 rows = lats.shape[0]
+
 my_variable = 'vosaline'
 #this can be passed to any variable present within the netcdf file
 name = "Surf_salin"
+#output name
 crs=4326
+#spatial ref
 
 input_list=[(data,my_variable,rows,cols,out_path,name,i,idx,crs,
              originX,originY,pixelX,pixelY) for idx,i in enumerate(dtime)]
